@@ -1,19 +1,20 @@
 .exam-form{
-    position: absolute;
-    right:0;
-    top:100px;
-    // background:red;
+    
+    // background:yellow;
     width:65%;
-    padding-left:10px;
+    height:100vh;
     display: flex;
     justify-content: center;
-    transition:all 0.5s;
+    padding-top:2rem;
+   
+   
 
 
     .exam__opciones{
         display: flex;
         flex-direction: column;
         margin-bottom:60px;
+        // background: blue;
         
         .form-check{
             background:rgb(238, 238, 238,.6);

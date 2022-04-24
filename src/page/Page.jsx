@@ -29,34 +29,34 @@ const Page = ()=>{
     const [gotQuestion20, setGotQuestion20] = useState(0)
     const [mark, setMark] = useState([])
 
-    const getQuestion = (question)=>{
+    // const getQuestion = (question)=>{
        
-        setMark([...mark, question])
-        mark.map(data=> data  === 'q1' ? setGotQuestion( 1) : '')
-        mark.map(data=> data  === 'q2' ? setGotQuestion2( 2) : '')
-        mark.map(data=> data  === 'q3' ? setGotQuestion3( 3) : '')
-        mark.map(data=> data  === 'q4' ? setGotQuestion4( 4) : '')
-        mark.map(data=> data  === 'q5' ? setGotQuestion5( 5) : '')
-        mark.map(data=> data  === 'q6' ? setGotQuestion6( 6) : '')
-        mark.map(data=> data  === 'q7' ? setGotQuestion7( 7) : '')
-        mark.map(data=> data  === 'q8' ? setGotQuestion8( 8) : '')
-        mark.map(data=> data  === 'q9' ? setGotQuestion9( 9) : '')
-        mark.map(data=> data  === 'q10' ? setGotQuestion10( 10) : '')
-        mark.map(data=> data  === 'q11' ? setGotQuestion11( 11) : '')
-        mark.map(data=> data  === 'q12' ? setGotQuestion12( 12) : '')
-        mark.map(data=> data  === 'q13' ? setGotQuestion13( 13) : '')
-        mark.map(data=> data  === 'q14' ? setGotQuestion14( 14) : '')
-        mark.map(data=> data  === 'q15' ? setGotQuestion15( 15) : '')
-        mark.map(data=> data  === 'q16' ? setGotQuestion16( 16) : '')
-        mark.map(data=> data  === 'q17' ? setGotQuestion17( 17) : '')
-        mark.map(data=> data  === 'q18' ? setGotQuestion18( 18) : '')
-        mark.map(data=> data  === 'q19' ? setGotQuestion19( 19) : '')
-        mark.map(data=> data  === 'q20' ? setGotQuestion20( 20) : '')
-        console.log(gotQuestion)
-        console.log(mark)
+    //     setMark([...mark, question])
+    //     mark.map(data=> data  === 'q1' ? setGotQuestion( 1) : '')
+    //     mark.map(data=> data  === 'q2' ? setGotQuestion2( 2) : '')
+    //     mark.map(data=> data  === 'q3' ? setGotQuestion3( 3) : '')
+    //     mark.map(data=> data  === 'q4' ? setGotQuestion4( 4) : '')
+    //     mark.map(data=> data  === 'q5' ? setGotQuestion5( 5) : '')
+    //     mark.map(data=> data  === 'q6' ? setGotQuestion6( 6) : '')
+    //     mark.map(data=> data  === 'q7' ? setGotQuestion7( 7) : '')
+    //     mark.map(data=> data  === 'q8' ? setGotQuestion8( 8) : '')
+    //     mark.map(data=> data  === 'q9' ? setGotQuestion9( 9) : '')
+    //     mark.map(data=> data  === 'q10' ? setGotQuestion10( 10) : '')
+    //     mark.map(data=> data  === 'q11' ? setGotQuestion11( 11) : '')
+    //     mark.map(data=> data  === 'q12' ? setGotQuestion12( 12) : '')
+    //     mark.map(data=> data  === 'q13' ? setGotQuestion13( 13) : '')
+    //     mark.map(data=> data  === 'q14' ? setGotQuestion14( 14) : '')
+    //     mark.map(data=> data  === 'q15' ? setGotQuestion15( 15) : '')
+    //     mark.map(data=> data  === 'q16' ? setGotQuestion16( 16) : '')
+    //     mark.map(data=> data  === 'q17' ? setGotQuestion17( 17) : '')
+    //     mark.map(data=> data  === 'q18' ? setGotQuestion18( 18) : '')
+    //     mark.map(data=> data  === 'q19' ? setGotQuestion19( 19) : '')
+    //     mark.map(data=> data  === 'q20' ? setGotQuestion20( 20) : '')
+    //     console.log(gotQuestion)
+    //     console.log(mark)
         
         
-    }
+    // }
     
     
 
@@ -86,7 +86,7 @@ const Page = ()=>{
         })
     }
     return(
-        <div className='page'>
+        <div className='container page pb-2'>
            {/* {mark} */}
            <div className={`${start ? 'close p-2' : 'exam-documentacion p-3'}`}>
                <div className="exam-documentacion__intro">
@@ -103,9 +103,10 @@ const Page = ()=>{
            </div>
 
             {
-                start ? (<Exam getQuestion={getQuestion}/> ) : ('')
+                start ? (<Exam /> ) : ('')
 
-            }{
+            }
+            {/* {
                 start ? (<Header  state={gotQuestion} q2={gotQuestion2}
                     q3={gotQuestion3} q4={gotQuestion4} q5={gotQuestion5}
                     q6={gotQuestion6} q7={gotQuestion7} q8={gotQuestion8}
@@ -113,7 +114,7 @@ const Page = ()=>{
                     q12={gotQuestion12} q13={gotQuestion13} q14={gotQuestion14}
                     q15={gotQuestion15} q16={gotQuestion16} q17={gotQuestion17}
                     q18={gotQuestion18} q19={gotQuestion19} q20={gotQuestion20}/>) : ('')
-            }
+            } */}
             
 
         </div>

@@ -1,80 +1,80 @@
-@use 'Variables';
-header{
-    background: rgba(255,255,255,.2);
-    backdrop-filter: blur(7px);
-    width:30%;
-    height:100vh;
-    position: fixed;
+// @use 'Variables';
+// header{
+//     background: rgba(255,255,255,.2);
+//     backdrop-filter: blur(7px);
+//     width:30%;
+//     height:100vh;
+//     position: fixed;
     
 
-    .header-title{
-        display: flex;
-        align-items: center;
-        padding:5px 5px 5px 10px;
-    }
-    .header-title > h1{
-        margin-top:8px;
-        color:#eee;
-        font-size:30px;
-        margin-left:5px;
-        text-shadow:1px 2px 2px rgba(0,0,0,.4)
-    }
-    .header-title > img{
-        width:30px;
-        height: 30px;
-    }
+//     .header-title{
+//         display: flex;
+//         align-items: center;
+//         padding:5px 5px 5px 10px;
+//     }
+//     .header-title > h1{
+//         margin-top:8px;
+//         color:#eee;
+//         font-size:30px;
+//         margin-left:5px;
+//         text-shadow:1px 2px 2px rgba(0,0,0,.4)
+//     }
+//     .header-title > img{
+//         width:30px;
+//         height: 30px;
+//     }
 
 
-    .header__exmans-number{
-        height:400px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top:80px;
+//     .header__exmans-number{
+//         height:400px;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         margin-top:80px;
         
-        .exams{
-            background:rgba(255,255,255,.4);
-            width:80%;
-            height:80%;
-            border-radius: 20px;
-            display:grid;
-            grid-template-columns: 90px 90px 100px  1fr;
-            grid-column-gap:-50px;
-            place-items: center;
-            a{
-                margin-left:-20px;
-                text-decoration: none;
-                background:rgba(255,255,255,.4);
-                backdrop-filter: blur(10px);
-                border-radius:20rem;
-                width:35px;
-                height:35px;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .mark{
-                margin-left:-20px;
-                text-decoration: none;
-                background:red;
-                backdrop-filter: blur(10px);
-                border-radius:20rem;
-                width:35px;
-                height:35px;
-                display:flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
-    }
-}
+//         .exams{
+//             background:rgba(255,255,255,.4);
+//             width:80%;
+//             height:80%;
+//             border-radius: 20px;
+//             display:grid;
+//             grid-template-columns: 90px 90px 100px  1fr;
+//             grid-column-gap:-50px;
+//             place-items: center;
+//             a{
+//                 margin-left:-20px;
+//                 text-decoration: none;
+//                 background:rgba(255,255,255,.4);
+//                 backdrop-filter: blur(10px);
+//                 border-radius:20rem;
+//                 width:35px;
+//                 height:35px;
+//                 display:flex;
+//                 justify-content: center;
+//                 align-items: center;
+//             }
+//             .mark{
+//                 margin-left:-20px;
+//                 text-decoration: none;
+//                 background:red;
+//                 backdrop-filter: blur(10px);
+//                 border-radius:20rem;
+//                 width:35px;
+//                 height:35px;
+//                 display:flex;
+//                 justify-content: center;
+//                 align-items: center;
+//             }
+//         }
+//     }
+// }
 
-::-webkit-scrollbar{
-    background:#00cdac;
-    width:13px;
-}
-::-webkit-scrollbar-thumb{
-    background:#eee;
-    border-radius:20rem;
-    border:3px solid #00cdac;
-}
+// ::-webkit-scrollbar{
+//     background:#00cdac;
+//     width:13px;
+// }
+// ::-webkit-scrollbar-thumb{
+//     background:#eee;
+//     border-radius:20rem;
+//     border:3px solid #00cdac;
+// }

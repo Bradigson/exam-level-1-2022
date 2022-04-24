@@ -378,7 +378,7 @@ const Exam = (props)=>{
                     <p className='form-check'><input type='radio' className='form-check-input' name='q20'value='d'onChange={handleChange}/>
                     D. Todas son correctas.</p>
                 </div>
-            <div>
+            <div className=' pb-4'>
                 <button className='btn btn-success'>Terminar</button>
             </div>
             </div>
