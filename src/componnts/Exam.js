@@ -20,6 +20,16 @@ const Exam = (props)=>{
 
                 
     }
+
+    const handleDone = ()=>{
+        Alert({
+            title:'DONE',
+            icon:'success',
+            text:'Enviado para calificar',
+            timer:'1300',
+            buttons:false
+        })
+    }
  
     
   
@@ -116,18 +126,20 @@ const Exam = (props)=>{
 
         
         setPuntos(acumulado);
-        console.log(acumulado)
 
         try{
             await addDoc(collection(dataBase, 'nicolas'),{
-                puntos
-            })
+                // puntos
+                
+            });
+            handleDone();
         }catch(err){
             console.log(err)
         }
 
     }
 
+    
 
     
     return(

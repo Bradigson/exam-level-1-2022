@@ -103,7 +103,7 @@ const Page = ()=>{
            </div>
 
             {
-                start ? (<Exam /> ) : ('')
+                start ? (<Exam start={start}/> ) : ('')
 
             }
             {/* {
