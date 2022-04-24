@@ -2,18 +2,20 @@ import {useState} from 'react';
 import '../assets/style/Exam.scss';
 import { preguntas } from '../contenido/Preguntas';
 import Alert from 'sweetalert';
+import app from '../firebase/Credenciales';
+import {getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc} from 'firebase/firestore';
+const dataBase = getFirestore(app);
 
 const Exam = (props)=>{
  
     const [question, setQuestion] = useState({});
-    const [puntos, setPuntos] = useState(0)
+    const [puntos, setPuntos] = useState()
    
     const handleChange = (e)=>{
         setQuestion({
             ...question,
             [e.target.name] : e.target.value
         })
-        props.getQuestion(e.target.name)
 
 
                 
@@ -21,7 +23,7 @@ const Exam = (props)=>{
  
     
   
-    const handleSubmit = (e)=>{
+    const handleSubmit = async(e)=>{
         e.preventDefault();
 
         let acumulado = 0;
@@ -114,8 +116,20 @@ const Exam = (props)=>{
 
         
         setPuntos(acumulado);
+        console.log(acumulado)
+
+        try{
+            await addDoc(collection(dataBase, 'nicolas'),{
+                puntos
+            })
+        }catch(err){
+            console.log(err)
+        }
 
     }
+
+
+    
     return(
         <form className='container exam-form' onSubmit={handleSubmit}>
             
@@ -168,7 +182,7 @@ const Exam = (props)=>{
                     <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='c'onChange={handleChange}/>
                     C. Abm.</p>
                     <p className='form-check'><input type='radio' className='form-check-input' name='q4'value='d'onChange={handleChange}/>
-                    D. A°.</p>
+                    D. E°.</p>
                 </div>
 
 
