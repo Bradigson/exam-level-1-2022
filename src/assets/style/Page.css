@@ -1,0 +1,33 @@
+.page{
+    height:100vh;
+}
+.exam-documentacion{
+    background:rgba(225,255,255,.4);
+    backdrop-filter: blur(10px);
+    margin: auto;
+    position: relative;
+    top:100px;
+    width:60%;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius:10px;
+    
+}
+.exam-documentacion__intro > h1{
+
+    font-size:14px;
+}
+.exam-documentacion__intro> h2{
+    font-size:15px;
+}
+.exam-documentacion__intro > p{
+    font-size:13px;
+}
+.exam-documentacion__intro{
+    margin-right: 10px;
+}
+
+.close{
+    display:none;
+}
